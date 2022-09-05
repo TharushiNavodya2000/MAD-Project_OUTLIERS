@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".UpdateProfile">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/purple_700">
+
+                <ImageView
+                    android:id="@+id/dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:id="@+id/upwelcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="@color/white"
+                    />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:layout_margin="15dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/upfullname"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/dp" />
+
+                <EditText
+                    android:id="@+id/upfullnameTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/upfullname"
+                    android:layout_marginStart="50dp"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/upfullname"
+                    android:background="@color/gray"
+                    android:id="@+id/div1"
+                    />
+
+                <ImageView
+                    android:id="@+id/upaddress"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/div1"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/home" />
+
+                <EditText
+                    android:id="@+id/upaddressTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/div1"
+                    android:layout_alignStart="@id/upaddress"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/div2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/upaddress"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/gray" />
+
+                <ImageView
+                    android:id="@+id/upemail"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/div2"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/message" />
+
+                <EditText
+                    android:id="@+id/upemailTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/upemail"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/div2"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/upemail"
+                    android:background="@color/gray"
+                    android:id="@+id/div3"
+                    />
+
+                <ImageView
+                    android:id="@+id/upbirthday"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/div3"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/birthday" />
+
+                <EditText
+                    android:id="@+id/upbirthdayTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/upemail"
+                    android:layout_marginStart="50dp"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/div3"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/upemail"
+                    android:background="@color/gray"
+                    android:id="@+id/div4"
+                    />
+
+                <ImageView
+                    android:id="@+id/upmobile"
+                    android:background="@drawable/mobile"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/div5"
+                    android:layout_marginTop="20dp" />
+
+                <EditText
+                    android:id="@+id/upmobileTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/upmobile"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/div5"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/upbirthday"
+                    android:background="@color/gray"
+                    android:id="@+id/div5"
+                    />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/uupdate"
+                android:layout_width="151dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:text="Update"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
