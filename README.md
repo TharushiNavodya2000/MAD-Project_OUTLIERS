@@ -1,4 +1,4 @@
-# MAD Project_OUTLIERS
+## MAD Project_OUTLIERS
 
 # Group Members
 IT21057106 - Navodya K.T (it21057106@my.sliit.lk)
