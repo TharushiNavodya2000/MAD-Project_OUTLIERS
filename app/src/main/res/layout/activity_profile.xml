@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Profile">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/purple_700">
+
+            <ImageView
+                android:id="@+id/dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/white"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:layout_margin="15dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/pfullname"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/dp" />
+
+            <TextView
+                android:id="@+id/pfullnameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/pfullname"
+                android:layout_marginStart="50dp"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/pfullname"
+                android:background="@color/gray"
+                android:id="@+id/div1"
+                />
+
+            <ImageView
+                android:id="@+id/paddress"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/div1"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/home" />
+
+            <TextView
+                android:id="@+id/paddressTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div1"
+                android:layout_alignStart="@id/paddress"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/div2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/paddress"
+                android:layout_marginTop="20dp"
+                android:background="@color/gray" />
+
+            <ImageView
+                android:id="@+id/pemail"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/div2"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/message" />
+
+            <TextView
+                android:id="@+id/pemailTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/pemail"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/div2"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/pemail"
+                android:background="@color/gray"
+                android:id="@+id/div3"
+                />
+
+            <ImageView
+                android:id="@+id/pbirthday"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/div3"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/birthday" />
+
+            <TextView
+                android:id="@+id/pbirthdayTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/pemail"
+                android:layout_marginStart="50dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/div3"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/pemail"
+                android:background="@color/gray"
+                android:id="@+id/div4"
+                />
+
+            <ImageView
+                android:id="@+id/pmobile"
+                android:background="@drawable/mobile"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/div5"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/pmobileTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/pmobile"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/div5"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/pbirthday"
+                android:background="@color/gray"
+                android:id="@+id/div5"
+                />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
