@@ -7,4 +7,6 @@ IT21053528 - Arawwala D. J. S. S (it21053528@my.sliit.lk) </br>
 IT21064654 - Fernando M. T. S (it21064654@my.sliit.lk) </br>
  
 ## Project Description
-<img src="travellogo.png" alt="logo" width="20px" height ="20px"/>
+<img src="travellogo.png" alt="logo" width="40px" height ="40px" align="center"/>
+Hello This is Outliers Travel management Mobile application 
+
