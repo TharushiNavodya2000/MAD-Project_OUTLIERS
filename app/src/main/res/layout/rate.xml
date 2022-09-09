@@ -5,7 +5,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:backgroundTint="#FF5722">
+    android:backgroundTint="@color/orange">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -38,7 +38,7 @@
                 android:id="@+id/message"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rate us"
+                android:text="@string/rate_title"
                 android:textColor="@color/orange"
                 android:textSize="25dp"
                 android:textStyle="bold"
@@ -68,8 +68,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
-                android:background="#004A2929"
-                android:backgroundTint="#009688"
+                android:background="@color/white"
                 android:numStars="5"
                 android:stepSize="0.5"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -89,7 +88,7 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
                 android:backgroundTint="@color/orange"
-                android:text="May be,Later"
+                android:text="@string/later"
                 app:cornerRadius="?android:attr/windowTitleSize"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -107,7 +106,7 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
                 android:backgroundTint="@color/orange"
-                android:text="Submit"
+                android:text="@string/submit"
                 app:cornerRadius="?android:attr/windowTitleSize"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

@@ -14,7 +14,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:background="@color/purple_700">
+            android:background="@color/blue">
 
             <ImageView
                 android:id="@+id/dp"
@@ -181,7 +181,8 @@
             android:id="@+id/update"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Update"
+            android:text="@string/update_btn"
+            android:backgroundTint="@color/blue"
             android:textSize="15dp"
             android:textStyle="normal"
             android:layout_gravity="center"/>
