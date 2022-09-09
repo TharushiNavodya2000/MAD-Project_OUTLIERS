@@ -23,6 +23,6 @@ Based on the knowledge and creativity gained from the studied applications, befo
 •	Database – Firebase <br/>
 •	Platform – Android <br/>
 #### Testing Methods 
-Use different test case and identify the issues in out application 
+Use different test case and identify the issues in our application 
 #### Integration Methods
 GitHub will be our go-to option as we are provided with free access to all features with our student accounts.
