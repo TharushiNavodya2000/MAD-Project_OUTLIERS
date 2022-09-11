@@ -8,6 +8,7 @@
     android:gravity="center"
     tools:context=".Register">
 
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,14 +16,24 @@
         android:background="@color/white"
         android:padding="15dp">
 
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_above="@+id/welcome"
+            android:layout_marginBottom="-106dp"
+            app:srcCompat="@drawable/travellogo" />
+
         <TextView
             android:id="@+id/welcome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="100dp"
             android:text="@string/register_title"
             android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tfullname"
@@ -173,6 +184,7 @@
             android:layout_marginLeft="70dp"
             android:layout_marginTop="40dp"
             android:layout_marginRight="70dp"
+            android:backgroundTint="@color/blue"
             android:text="@string/register_title" />
 
         <LinearLayout
