@@ -1,6 +1,7 @@
 package com.example.project;
 import static java.security.AccessController.getContext;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,12 +20,20 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Map;
 
 
@@ -35,14 +44,14 @@ public class Blog extends AppCompatActivity {
     private TextView addimage;
     private Button upload;
     private ImageView images;
-    private ProgressBar progressBar;
-    private Uri imageuri;
     Bitmap image_file;
     ConstraintLayout bloglaout;
     FirebaseAuth auth;
     FirebaseFirestore store;
     String UserID;
-
+    StorageReference storageReference;
+    UploadTask uploadTask;
+    String ID;
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -126,15 +135,28 @@ public class Blog extends AppCompatActivity {
         addimage = findViewById(R.id.badd);
         upload = findViewById(R.id.bbutton);
         images = findViewById(R.id.bimage);
-        progressBar = findViewById(R.id.bprogressBar);
         upload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String ID = store.collection("blog").document().getId();
+                ID = store.collection("blog").document().getId();
                 DocumentReference documentReference = store.collection("blog").document(ID);
                 String discription = discriptionTxt.getText().toString();
                 String place = placeTxt.getText().toString();
+                Map<String,Object> blog = new HashMap<>();
+                blog.put("userID",UserID);
+                blog.put("place",place);
+                blog.put("discription",discription);
+                documentReference.set(blog).addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void unused) {
+                        uploadImage(image_file,ID);
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
 
+                    }
+                });
             }
         });
         addimage.setOnClickListener(new View.OnClickListener() {
@@ -171,6 +193,26 @@ public class Blog extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void uploadImage(Bitmap image_file, String id)
+    {
+        ByteArrayOutputStream arrayOutputStream = new ByteArrayOutputStream();
+        image_file.compress(Bitmap.CompressFormat.PNG,100,arrayOutputStream);
+        byte[] bytearray = arrayOutputStream.toByteArray();
+        storageReference = FirebaseStorage.getInstance().getReference().child("blog_image/"+id);
+        uploadTask = storageReference.putBytes(bytearray);
+        uploadTask.addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+
+            }
+        });
     }
 
 }
