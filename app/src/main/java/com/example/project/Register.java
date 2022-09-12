@@ -222,12 +222,12 @@ public class Register extends AppCompatActivity {
     {
         dialog.setContentView(R.layout.successlayout);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        ImageView close = dialog.findViewById(R.id.close);
-        Button btnok = dialog.findViewById(R.id.buttonOK);
+        ImageView close = dialog.findViewById(R.id.sclose);
+        Button btnok = dialog.findViewById(R.id.sbuttonOK);
         close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Register.this,Login.class);
+                Intent intent = new Intent(Register.this,Blog.class);
                 dialog.dismiss();
                 startActivity(intent);
             }
@@ -235,7 +235,7 @@ public class Register extends AppCompatActivity {
         btnok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Register.this,Login.class);
+                Intent intent = new Intent(Register.this,Blog.class);
                 dialog.dismiss();
                 startActivity(intent);
             }

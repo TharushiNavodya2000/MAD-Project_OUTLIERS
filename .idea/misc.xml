@@ -7,10 +7,15 @@
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/drawable/add.xml" value="0.205" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/drawable/background.xml" value="0.205" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/drawable/closed.xml" value="0.205" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/drawable/down_wave.xml" value="0.192" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/drawable/ic_baseline_fingerprint.xml" value="0.1" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/drawable/ic_wave_haikei.xml" value="0.236" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/drawable/ic_wave_haikei__down.xml" value="0.2095" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/drawable/login.xml" value="0.2795" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/drawable/notification.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/drawable/screen.xml" value="0.236" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/drawable/up_wave.xml" value="0.192" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/drawable/uplord.xml" value="0.1" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/drawable/wave.xml" value="0.1" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/activity_add_blog.xml" value="0.1" />
@@ -20,12 +25,14 @@
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/activity_loading_dialog.xml" value="0.275" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/activity_login.xml" value="0.265993265993266" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/activity_main.xml" value="0.2296875" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/activity_profile.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/activity_profile.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/activity_register.xml" value="0.259375" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/activity_update_profile.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/rate.xml" value="0.1" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/successfullblogadd.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/successfulupdateprofile.xml" value="0.27395833333333336" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/successlayout.xml" value="0.22864583333333333" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/test.xml" value="0.2" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/unsuccessfullogin.xml" value="0.196875" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/unsuccesslayout.xml" value="0.264" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/unsucessfullblogadd.xml" value="0.275" />
