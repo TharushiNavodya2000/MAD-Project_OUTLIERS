@@ -20,6 +20,7 @@ import android.widget.ImageView;
 import android.widget.MultiAutoCompleteTextView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -218,7 +219,8 @@ public class Blog<Calander> extends AppCompatActivity {
         uploadTask.addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                Intent intent = new Intent(Blog.this,BlogView.class);
+                Toast.makeText(Blog.this,"Successfully uplording your blog",Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(Blog.this,ViewBlog.class);
                 startActivity(intent);
             }
         }).addOnFailureListener(new OnFailureListener() {

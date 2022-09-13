@@ -47,4 +47,24 @@
     <string name="submit">Submit</string>
     <string name="later">May be,Later</string>
     <string name="rate_title">Rate us</string>
+
+    <string-array name="place">
+        <item>Galle</item>
+        <item>Kandy</item>
+        <item>Mahamewnawa Asapuwa</item>
+        <item>Nelum Kuluna</item>
+        <item>Seema Malakaya</item>
+        <item>Sigiriya</item>
+        <item>Vatadagaya</item>
+    </string-array>
+
+    <string-array name="description">
+        <item>Galle is a major city in Sri Lanka.</item>
+        <item>Kandy is a major city in Sri Lanka located in the Central Province.  </item>
+        <item>Mahamevnawa, meaning “Great Cloud Monastery,” was the name of the first</item>
+        <item>Lotus Tower, also referred to as Colombo Lotus Tower, is a 350 m tall </item>
+        <item>Seema Malaka is a Buddhist temple in Colombo, Sri Lanka. The tempip.</item>
+        <item>Sigiriya or Sinhagiri is an ancient rock fortress located in the </item>
+        <item>The architecture of ancient Sri Lanka displays a rich diversity</item>
+    </string-array>
 </resources>
