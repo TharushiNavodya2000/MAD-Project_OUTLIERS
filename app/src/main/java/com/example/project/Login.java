@@ -76,6 +76,7 @@ public class Login extends AppCompatActivity  {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Login.this,fingerlog.class);
+                intent.putExtra("key","surith");
                 startActivity(intent);
             }
         });

@@ -19,14 +19,14 @@
 
             <ImageView
                 android:id="@+id/id"
-                android:layout_width="wrap_content"
-                android:layout_height="163dp"
+                android:layout_width="match_parent"
+                android:layout_height="154dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="0dp"
-                android:layout_marginEnd="1dp"
-                android:layout_marginBottom="87dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="110dp"
                 android:background="@drawable/up_wave" />
 
             <ImageView
@@ -199,6 +199,7 @@
             android:layout_gravity="center"
             android:backgroundTint="@color/blue"
             android:text="Ok"
+            app:cornerRadius="?android:attr/windowTitleSize"
             android:textSize="15dp"
             android:textStyle="normal" />
 

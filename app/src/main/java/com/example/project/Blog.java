@@ -17,6 +17,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.MultiAutoCompleteTextView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -33,17 +34,24 @@ import com.google.firebase.storage.UploadTask;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
 
-public class Blog extends AppCompatActivity {
+public class Blog<Calander> extends AppCompatActivity {
 
     private EditText placeTxt;
     private EditText discriptionTxt;
-    private TextView addimage;
+    private Button addimage;
     private Button upload;
     private ImageView images;
+    Calendar calander = Calendar.getInstance();
+    SimpleDateFormat simpleDateFormat1 = new SimpleDateFormat("dd-MM-yyyy");
+    SimpleDateFormat simpleDateFormat2 = new SimpleDateFormat("h:mm a");
+    String date = simpleDateFormat1.format(calander.getTime());
+    String time = simpleDateFormat2.format(calander.getTime());
     Bitmap image_file;
     ConstraintLayout bloglaout;
     FirebaseAuth auth;
@@ -135,9 +143,12 @@ public class Blog extends AppCompatActivity {
         addimage = findViewById(R.id.badd);
         upload = findViewById(R.id.bbutton);
         images = findViewById(R.id.bimage);
+
+
         upload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 ID = store.collection("blog").document().getId();
                 DocumentReference documentReference = store.collection("blog").document(ID);
                 String discription = discriptionTxt.getText().toString();
@@ -146,6 +157,8 @@ public class Blog extends AppCompatActivity {
                 blog.put("userID",UserID);
                 blog.put("place",place);
                 blog.put("discription",discription);
+                blog.put("time",time);
+                blog.put("date",date);
                 documentReference.set(blog).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
@@ -205,7 +218,8 @@ public class Blog extends AppCompatActivity {
         uploadTask.addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
+                Intent intent = new Intent(Blog.this,BlogView.class);
+                startActivity(intent);
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
