@@ -115,6 +115,7 @@ public class Blog<Calander> extends AppCompatActivity {
                         {
                             I.printStackTrace();
                         }
+
                     }
                     else {
                         Snackbar snackbar = Snackbar.make(bloglaout,"Your Image can not upload Try again",Snackbar.LENGTH_LONG).setAction("Undo", new View.OnClickListener() {
