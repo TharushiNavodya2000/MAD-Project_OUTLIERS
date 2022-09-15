@@ -43,6 +43,7 @@ import java.util.Map;
 
 public class Blog<Calander> extends AppCompatActivity {
 
+
     private EditText placeTxt;
     private EditText discriptionTxt;
     private Button addimage;
