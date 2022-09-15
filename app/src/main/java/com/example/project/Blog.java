@@ -95,6 +95,7 @@ public class Blog<Calander> extends AppCompatActivity {
                     }
                     break;
                 case 1:
+
                 {
                     if(resultCode == RESULT_OK && data != null)
                     {
