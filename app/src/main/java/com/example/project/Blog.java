@@ -14,7 +14,6 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-
 public class Blog extends AppCompatActivity {
 
     private EditText placeTxt;
