@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 public class Blog extends AppCompatActivity {
 
+
     private EditText placeTxt;
     private EditText discriptionTxt;
     private TextView addimage;
