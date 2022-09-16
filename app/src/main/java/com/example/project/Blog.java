@@ -12,6 +12,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
@@ -41,7 +42,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class Blog<Calander> extends AppCompatActivity {
+public class Blog extends AppCompatActivity {
 
 
     private EditText placeTxt;
@@ -222,9 +223,17 @@ public class Blog<Calander> extends AppCompatActivity {
         uploadTask.addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                Toast.makeText(Blog.this,"Successfully uplording your blog",Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(Blog.this,ViewBlog.class);
-                startActivity(intent);
+                LoardingDialog loardingDialog = new LoardingDialog(Blog.this);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        loardingDialog.startLordingDialog();
+                        Toast.makeText(Blog.this,"Successfully uplording your blog",Toast.LENGTH_LONG).show();
+                        startActivity(intent);
+                    }
+                },5000);
+
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
