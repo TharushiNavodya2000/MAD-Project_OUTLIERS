@@ -6,6 +6,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class ViewBlog extends AppCompatActivity {
 
@@ -14,6 +17,8 @@ public class ViewBlog extends AppCompatActivity {
     String desriptions[];
     int images[]= {R.drawable.galle,R.drawable.kandy,R.drawable.mahamewnawa,R.drawable.nelumkuluna,R.drawable.seema_malakaya,
                 R.drawable.sigiriya,R.drawable.vatadageya};
+    Button button;
+
     RecyclerView recyclerView;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +26,13 @@ public class ViewBlog extends AppCompatActivity {
         places = getResources().getStringArray(R.array.place);
         desriptions = getResources().getStringArray(R.array.description);
         recyclerView = findViewById(R.id.recycleView);
+        button = findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(ViewBlog.this,"Click button",Toast.LENGTH_LONG).show();
+            }
+        });
         BlogAdapter myAdapter = new BlogAdapter(this,places,desriptions,images);
         recyclerView.setAdapter(myAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
