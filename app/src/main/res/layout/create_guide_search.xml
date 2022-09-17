@@ -78,7 +78,7 @@
         android:id="@+id/createGuideBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="432dp"
+        android:layout_marginTop="424dp"
         android:backgroundTint="#003399"
         android:text="CREATE GUIDE"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,7 +87,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/menuBarHome"
         android:layout_width="36dp"
         android:layout_height="36dp"
         android:layout_marginStart="32dp"
@@ -99,18 +99,18 @@
         app:srcCompat="@drawable/home" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/menuBarItinerary"
         android:layout_width="36dp"
         android:layout_height="36dp"
         android:layout_marginStart="66dp"
         android:layout_marginBottom="20dp"
         app:tint="#003399"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintStart_toEndOf="@+id/menuBarGuide"
         app:srcCompat="@drawable/itinerary_icon" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/menuBarProfile"
         android:layout_width="36dp"
         android:layout_height="36dp"
         android:layout_marginStart="64dp"
@@ -119,18 +119,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.222"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toEndOf="@+id/menuBarItinerary"
         app:srcCompat="@drawable/user_icon" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/menuBarGuide"
         android:layout_width="34dp"
         android:layout_height="34dp"
         android:layout_marginStart="64dp"
         android:layout_marginBottom="20dp"
         app:tint="#003399"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/menuBarHome"
         app:srcCompat="@drawable/compass" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
