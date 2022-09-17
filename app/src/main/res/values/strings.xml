@@ -67,4 +67,13 @@
         <item>Sigiriya or Sinhagiri is an ancient rock fortress located in the </item>
         <item>The architecture of ancient Sri Lanka displays a rich diversity</item>
     </string-array>
+
+    <string name="CreateItinerary">Create an Itinerary</string>
+    <string name="Newtrip">MakAddDatese your next trip plan</string>
+    <string name="Where">Where you want to go?</string>
+    <string name="AddDates">Add dates</string>
+    <string name="StartDate">Start date</string>
+    <string name="EndDate">End date</string>
+    <string name="Startplanning">Start Planning</string>
+    <string name="Add_a_place">Add a place</string>
 </resources>
