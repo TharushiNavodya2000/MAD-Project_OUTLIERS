@@ -79,6 +79,7 @@ public class Profile extends AppCompatActivity {
                 email.setText(gemail);
                 birthday.setText(gbirthday);
                 phonenumber.setText(gphone);
+
             }
         });
         update.setOnClickListener(new View.OnClickListener() {
