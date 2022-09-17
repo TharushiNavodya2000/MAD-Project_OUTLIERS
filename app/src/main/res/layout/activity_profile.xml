@@ -49,7 +49,6 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
                 android:text="Update Profile Page"
-                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                 android:textColor="@color/blue"
                 android:textStyle="bold" />
         </RelativeLayout>
