@@ -76,6 +76,7 @@ public class Login extends AppCompatActivity  {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Login.this,fingerlog.class);
+                intent.putExtra("key","surith");
                 startActivity(intent);
             }
         });
@@ -131,10 +132,10 @@ public class Login extends AppCompatActivity  {
             @Override
             public void onFailure(@NonNull Exception e) {
                 Dialog dialog = new Dialog(Login.this);
-                dialog.setContentView(R.layout.unsuccesslayout);
+                dialog.setContentView(R.layout.unsuccessfullogin);
                 dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                ImageView close = dialog.findViewById(R.id.close);
-                Button btnok = dialog.findViewById(R.id.buttonOK);
+                ImageView close = dialog.findViewById(R.id.logclose);
+                Button btnok = dialog.findViewById(R.id.logbuttonOK);
                 close.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {

@@ -34,6 +34,9 @@ public class fingerlog extends AppCompatActivity {
         setContentView(R.layout.activity_fingerlog);
         fingericon = findViewById(R.id.fingure);
         layout = findViewById(R.id.fingerprint);
+        Intent i = getIntent();
+        String name = i.getStringExtra("key");
+
         //Use android documentation to implement figure print option
         //I change log messages as Toast message
         BiometricManager biometricManager = BiometricManager.from(this);

@@ -8,6 +8,7 @@
     android:gravity="center"
     tools:context=".Register">
 
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,14 +16,23 @@
         android:background="@color/white"
         android:padding="15dp">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_above="@+id/welcome"
+            android:layout_marginBottom="-106dp"
+            app:srcCompat="@drawable/travellogo" />
+
         <TextView
             android:id="@+id/welcome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Register"
+            android:layout_marginTop="100dp"
+            android:text="@string/register_title"
             android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tfullname"
@@ -31,7 +41,7 @@
             android:layout_below="@id/welcome"
             android:layout_marginTop="5dp"
             android:padding="6dp"
-            android:text="Full name *"
+            android:text="@string/fullname_title"
             android:textColor="#555555"
             android:textSize="16sp" />
 
@@ -40,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/tfullname"
-            android:hint="Enter full name"
+            android:hint="@string/fullname_instruction"
             android:inputType="text"
             android:textSize="16sp" />
 
@@ -51,7 +61,7 @@
             android:layout_below="@id/rfullname"
             android:layout_marginTop="5dp"
             android:padding="6dp"
-            android:text="Address *"
+            android:text="@string/address_title"
             android:textColor="#555555"
             android:textSize="16sp" />
 
@@ -60,7 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/taddress"
-            android:hint="Enter Address"
+            android:hint="@string/address_instruction"
             android:inputType="text"
             android:textSize="16sp" />
 
@@ -71,7 +81,7 @@
             android:layout_below="@id/raddress"
             android:layout_marginTop="5dp"
             android:padding="6dp"
-            android:text="Email Address *"
+            android:text="@string/email_title"
             android:textColor="#555555"
             android:textSize="16sp" />
 
@@ -80,7 +90,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/temail"
-            android:hint="Enter Email Address"
+            android:hint="@string/email_instruction"
             android:inputType="textEmailAddress"
             android:textSize="16sp" />
 
@@ -91,7 +101,7 @@
             android:layout_below="@id/remail"
             android:layout_marginTop="5dp"
             android:padding="6dp"
-            android:text="Phone number *"
+            android:text="@string/phone_title"
             android:textColor="#555555"
             android:textSize="16sp" />
 
@@ -100,7 +110,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/tphone"
-            android:hint="Enter Phone number"
+            android:hint="@string/phone_instruction"
             android:inputType="phone"
             android:textSize="16sp" />
 
@@ -111,7 +121,7 @@
             android:layout_below="@id/rphone"
             android:layout_marginTop="5dp"
             android:padding="6dp"
-            android:text="Birthday *"
+            android:text="@string/birthday_title"
             android:textColor="#555555"
             android:textSize="16sp" />
 
@@ -120,7 +130,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/tbirthday"
-            android:hint="Enter Birthday (dd/mm/yyyy)"
+            android:hint="@string/birhday_instruction"
             android:inputType="date"
             android:textSize="16sp" />
 
@@ -132,7 +142,7 @@
             android:layout_below="@id/rbirthday"
             android:layout_marginTop="10dp"
             android:padding="6dp"
-            android:text="Password *"
+            android:text="@string/password_title"
             android:textColor="#555555"
             android:textSize="16sp" />
 
@@ -141,7 +151,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/tpassword"
-            android:hint="Enter Password"
+            android:hint="@string/password_instruction"
             android:inputType="textPassword"
             android:textSize="16sp" />
 
@@ -152,7 +162,7 @@
             android:layout_below="@id/rpassword"
             android:layout_marginTop="10dp"
             android:padding="6dp"
-            android:text="Confirm Password *"
+            android:text="@string/confirm_password_title"
             android:textColor="#555555"
             android:textSize="16sp" />
 
@@ -161,9 +171,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/tcpassword"
-            android:hint="Enter Password"
+            android:hint="@string/password_instruction"
             android:inputType="textPassword"
             android:textSize="16sp" />
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rcpassword"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="-8dp"
+            android:text="I accept all the terms and condion"
+            android:checked="true"
+            android:textAlignment="center" />
 
         <Button
             android:id="@+id/register"
@@ -173,7 +194,8 @@
             android:layout_marginLeft="70dp"
             android:layout_marginTop="40dp"
             android:layout_marginRight="70dp"
-            android:text="Register" />
+            android:backgroundTint="@color/blue"
+            android:text="@string/register_title" />
 
         <LinearLayout
             android:layout_width="wrap_content"

@@ -2,21 +2,23 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bloglaout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Blog">
 
+
     <EditText
         android:id="@+id/bplaceTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="389dp"
+        android:layout_height="45dp"
         android:layout_marginTop="23dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bplace"
         app:layout_constraintVertical_bias="0.0" />
@@ -25,7 +27,7 @@
         android:id="@+id/bheading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Blog"
+        android:text="@string/add_blogheading"
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -39,9 +41,9 @@
         android:id="@+id/bplace"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Type your visited place name hear"
-        android:textSize="15dp"
-        android:textStyle="bold"
+        android:text="@string/place_add_title"
+        android:textSize="16sp"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.142"
@@ -53,9 +55,9 @@
         android:id="@+id/bdescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textSize="15dp"
-        android:text="Type your description hear"
+        android:text="@string/description_title"
+        android:textSize="16sp"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.134"
@@ -65,15 +67,16 @@
 
     <EditText
         android:id="@+id/bdiscriptionTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="385dp"
+        android:layout_height="80dp"
         android:layout_marginTop="14dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
+        android:lines="5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bdescription"
         app:layout_constraintVertical_bias="0.0" />
@@ -90,14 +93,14 @@
         app:layout_constraintVertical_bias="0.262"
         app:srcCompat="@drawable/uplord" />
 
-    <TextView
+    <Button
         android:id="@+id/badd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="23dp"
-        android:text="Add image"
-        android:textSize="15dp"
-        android:textStyle="bold"
+        android:text="@string/add_image"
+        android:backgroundTint="@color/lightblue"
+        app:cornerRadius="?android:attr/windowTitleSize"
         app:layout_constraintBottom_toTopOf="@+id/bplace"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -107,31 +110,19 @@
 
     <Button
         android:id="@+id/bbutton"
-        android:layout_width="289dp"
-        android:layout_height="44dp"
+        android:layout_width="184dp"
+        android:layout_height="52dp"
         android:layout_marginStart="100dp"
         android:layout_marginEnd="100dp"
-        android:backgroundTint="#003399"
-        android:text="UPLOAD"
+        android:backgroundTint="@color/blue"
+        android:text="@string/uploadbtn"
+        app:cornerRadius="?android:attr/windowTitleSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.879" />
-
-    <ProgressBar
-        android:id="@+id/bprogressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="370dp"
-        android:layout_height="13dp"
-        android:layout_marginTop="21dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.634"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bbutton"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.907" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

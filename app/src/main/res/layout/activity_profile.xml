@@ -1,49 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".Profile">
+
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:background="@color/purple_700">
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/id"
+                android:layout_width="425dp"
+                android:layout_height="145dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="-14dp"
+                android:layout_marginBottom="105dp"
+                android:background="@drawable/up_wave" />
 
             <ImageView
                 android:id="@+id/dp"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:background="@drawable/dp"
+                android:layout_width="248dp"
+                android:layout_height="152dp"
                 android:layout_centerInParent="true"
-                android:layout_marginTop="20dp" />
+                android:layout_marginTop="20dp"
+                android:background="@drawable/profile" />
 
             <TextView
-                android:id="@+id/welcome"
+                android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-
+                android:text="Update Profile Page"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                android:textColor="@color/white"
-                />
-
-
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
         </RelativeLayout>
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="15dp"
             android:layout_margin="15dp"
-            android:background="@color/white">
+            android:background="@color/white"
+            android:padding="35dp">
 
             <ImageView
                 android:id="@+id/pfullname"
@@ -51,7 +67,7 @@
                 android:layout_height="25dp"
                 android:background="@drawable/dp" />
 
-            <TextView
+            <EditText
                 android:id="@+id/pfullnameTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -60,13 +76,12 @@
                 android:textSize="18sp" />
 
             <View
+                android:id="@+id/div1"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="20dp"
                 android:layout_below="@id/pfullname"
-                android:background="@color/gray"
-                android:id="@+id/div1"
-                />
+                android:layout_marginTop="20dp"
+                android:background="@color/gray" />
 
             <ImageView
                 android:id="@+id/paddress"
@@ -76,7 +91,7 @@
                 android:layout_marginTop="20dp"
                 android:background="@drawable/home" />
 
-            <TextView
+            <EditText
                 android:id="@+id/paddressTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -102,24 +117,23 @@
                 android:layout_marginTop="20dp"
                 android:background="@drawable/message" />
 
-            <TextView
+            <EditText
                 android:id="@+id/pemailTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/div2"
                 android:layout_alignStart="@id/pemail"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="20dp"
-                android:layout_below="@id/div2"
                 android:textSize="18sp" />
 
             <View
+                android:id="@+id/div3"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="20dp"
                 android:layout_below="@id/pemail"
-                android:background="@color/gray"
-                android:id="@+id/div3"
-                />
+                android:layout_marginTop="20dp"
+                android:background="@color/gray" />
 
             <ImageView
                 android:id="@+id/pbirthday"
@@ -129,64 +143,94 @@
                 android:layout_marginTop="20dp"
                 android:background="@drawable/birthday" />
 
-            <TextView
+            <EditText
                 android:id="@+id/pbirthdayTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignStart="@id/pemail"
-                android:layout_marginStart="50dp"
-
-                android:layout_marginTop="20dp"
                 android:layout_below="@id/div3"
+                android:layout_alignStart="@id/pemail"
+
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
                 android:textSize="18sp" />
 
             <View
+                android:id="@+id/div4"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="20dp"
                 android:layout_below="@id/pemail"
-                android:background="@color/gray"
-                android:id="@+id/div4"
-                />
+                android:layout_marginTop="20dp"
+                android:background="@color/gray" />
 
             <ImageView
                 android:id="@+id/pmobile"
-                android:background="@drawable/mobile"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_below="@id/div5"
-                android:layout_marginTop="20dp" />
+                android:layout_marginTop="20dp"
+                android:background="@drawable/mobile" />
 
-            <TextView
+            <EditText
                 android:id="@+id/pmobileTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/div5"
                 android:layout_alignStart="@id/pmobile"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="20dp"
-                android:layout_below="@id/div5"
                 android:textSize="18sp" />
 
             <View
+                android:id="@+id/div5"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="20dp"
                 android:layout_below="@id/pbirthday"
-                android:background="@color/gray"
-                android:id="@+id/div5"
-                />
+                android:layout_marginTop="20dp"
+                android:background="@color/gray" />
         </RelativeLayout>
 
         <Button
             android:id="@+id/update"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Update"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/blue"
+            android:text="@string/update_btn"
+            app:cornerRadius="?android:attr/windowTitleSize"
             android:textSize="15dp"
-            android:textStyle="normal"
-            android:layout_gravity="center"/>
+            android:textStyle="normal" />
 
     </LinearLayout>
 
+    <ImageView
 
-</ScrollView>
+        android:layout_width="439dp"
+        android:layout_height="99dp"
+        android:background="@drawable/down_wave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

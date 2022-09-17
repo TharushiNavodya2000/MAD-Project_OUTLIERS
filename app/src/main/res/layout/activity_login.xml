@@ -20,15 +20,15 @@
         android:textStyle="bold"
         android:textSize="30sp"
         android:gravity="center"
-        android:textColor="#003399"
-        android:text="Login Hear"/>
+        android:textColor="@color/blue"
+        android:text="@string/login_title"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
         android:id="@+id/phone"
-        android:hint="Email"
+        android:hint="@string/email"
         android:maxLines="1"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:id="@+id/password"
-        android:hint="Password"
+        android:hint="@string/password"
         android:maxLines="1"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
@@ -62,7 +62,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="25dp"
             android:textStyle="bold"
-            android:text="Reset password" />
+            android:text="@string/reset_password_btn" />
 
     </LinearLayout>
 
@@ -75,8 +75,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginTop="5dp"
-        android:text="Login"
-        android:background="#003399"
+        android:text="@string/login_title"
+        android:background="@color/blue"
 
         />
     <androidx.appcompat.widget.AppCompatButton
@@ -86,8 +86,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginTop="10dp"
-        android:background="#003399"
-        android:text="Login using biometric credential"
+        android:background="@color/blue"
+        android:text="@string/biometric_btn"
 
         />
     <LinearLayout
@@ -99,7 +99,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Don't have an account ?"/>
+            android:text="@string/account_have_instruction"/>
         <TextView
             android:layout_marginStart="5dp"
             android:id="@+id/registerNow"

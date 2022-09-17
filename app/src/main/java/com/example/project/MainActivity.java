@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
                 loardingDialog.startLordingDialog();
                 openLogin();
             }
-        },4000);
+        },5000);
 
     }
     public void openLogin()
