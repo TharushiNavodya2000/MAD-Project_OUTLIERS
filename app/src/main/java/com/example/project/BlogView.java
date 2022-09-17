@@ -16,6 +16,7 @@ public class BlogView extends AppCompatActivity {
     AnimatedVectorDrawableCompat avd;
     AnimatedVectorDrawable avd2;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -13,6 +13,7 @@ import android.widget.Toast;
 public class ViewBlog extends AppCompatActivity {
 
 
+
     String places[];
     String desriptions[];
     int images[]= {R.drawable.galle,R.drawable.kandy,R.drawable.mahamewnawa,R.drawable.nelumkuluna,R.drawable.seema_malakaya,

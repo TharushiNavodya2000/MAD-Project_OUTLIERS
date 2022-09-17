@@ -30,6 +30,7 @@ public class BlogAdapter extends RecyclerView.Adapter<BlogAdapter.MyViewHolder> 
         return new MyViewHolder(view);
     }
 
+
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.places.setText(place[position]);
         holder.descriptions.setText(description[position]);
