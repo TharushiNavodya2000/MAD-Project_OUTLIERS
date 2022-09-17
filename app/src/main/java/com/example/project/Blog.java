@@ -223,13 +223,13 @@ public class Blog extends AppCompatActivity {
         uploadTask.addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                Intent intent = new Intent(Blog.this,ViewBlog.class);
+                Intent intent = new Intent(Blog.this, ViewBlog.class);
                 LoardingDialog loardingDialog = new LoardingDialog(Blog.this);
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         loardingDialog.startLordingDialog();
-                        Toast.makeText(Blog.this,"Successfully uplording your blog",Toast.LENGTH_LONG).show();
+                        Toast.makeText(Blog.this,"Successfully uploading your blog",Toast.LENGTH_LONG).show();
                         startActivity(intent);
                     }
                 },5000);
