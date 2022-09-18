@@ -10,7 +10,7 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/travellogo"
-        android:label="Travel with OUTLIERS"
+        android:label="Travel Planner"
         android:roundIcon="@drawable/travellogo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project"
