@@ -9,11 +9,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-public class Guides extends AppCompatActivity {
+public class GuideLocationKandy extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_guides);
+        setContentView(R.layout.activity_guide_location_kandy);
     }
 }

@@ -40,8 +40,8 @@ public class ViewBlog extends AppCompatActivity {
         buttonguide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ViewBlog.this, Guides.class);
-                Toast.makeText(ViewBlog.this,"Click Guild",Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(ViewBlog.this, GuideLocationKandy.class);
+                Toast.makeText(ViewBlog.this,"Successful Guide",Toast.LENGTH_LONG).show();
                 startActivity(intent);
             }
         });

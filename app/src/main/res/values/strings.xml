@@ -49,7 +49,7 @@
     <string name="rate_title">Rate us</string>
 
     <string-array name="place">
-        <item>Galle</item>
+        <item>Galle</item>s
         <item>Kandy</item>
         <item>Mahamewnawa Asapuwa</item>
         <item>Nelum Kuluna</item>
@@ -76,4 +76,11 @@
     <string name="EndDate">End date</string>
     <string name="Startplanning">Start Planning</string>
     <string name="Add_a_place">Add a place</string>
+
+    <string name="create_guide">CREATE GUIDE</string>
+    <string name="createGuideBtn">CREATE GUIDE</string>
+    <string name="guideShortDes">Make your own Travel Guide\nLet others know the destination</string>
+    <string name="whereYouGo">Where you want to go?</string>
+    <string name="createGuideHeading">Create Guide</string>
+
 </resources>
