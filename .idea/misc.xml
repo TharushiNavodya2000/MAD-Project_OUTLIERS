@@ -3,23 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/surit/AndroidStudioProjects/MAD-Project_OUTLIERS/app/src/main/res/layout/activity_blog.xml" value="0.25" />
-        <entry key="..\:/Users/surit/AndroidStudioProjects/MAD-Project_OUTLIERS/app/src/main/res/layout/activity_blog_view.xml" value="0.25" />
-        <entry key="..\:/Users/surit/AndroidStudioProjects/MAD-Project_OUTLIERS/app/src/main/res/layout/activity_fingerlog.xml" value="0.25" />
-        <entry key="..\:/Users/surit/AndroidStudioProjects/MAD-Project_OUTLIERS/app/src/main/res/layout/activity_foget_password.xml" value="0.25" />
-        <entry key="..\:/Users/surit/AndroidStudioProjects/MAD-Project_OUTLIERS/app/src/main/res/layout/activity_loading_dialog.xml" value="0.25" />
-        <entry key="..\:/Users/surit/AndroidStudioProjects/MAD-Project_OUTLIERS/app/src/main/res/layout/activity_login.xml" value="0.2" />
-        <entry key="..\:/Users/surit/AndroidStudioProjects/MAD-Project_OUTLIERS/app/src/main/res/layout/activity_profile.xml" value="0.2" />
-        <entry key="..\:/Users/surit/AndroidStudioProjects/MAD-Project_OUTLIERS/app/src/main/res/layout/activity_register.xml" value="0.25" />
-        <entry key="..\:/Users/surit/AndroidStudioProjects/MAD-Project_OUTLIERS/app/src/main/res/layout/create_itinerary.xml" value="0.264" />
-        <entry key="..\:/Users/surit/AndroidStudioProjects/MAD-Project_OUTLIERS/app/src/main/res/layout/itinerary.xml" value="0.2" />
-        <entry key="..\:/Users/surit/AndroidStudioProjects/MAD-Project_OUTLIERS/app/src/main/res/layout/unsuccessfullogin.xml" value="0.2" />
-        <entry key="..\:/Users/surit/AndroidStudioProjects/MAD-Project_OUTLIERS/app/src/main/res/layout/unsuccesslayout.xml" value="0.2" />
-        <entry key="..\:/Users/surit/AndroidStudioProjects/MAD-Project_OUTLIERS/app/src/main/res/layout/unsucessfullblogadd.xml" value="0.2" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/drawable-anydpi/location.xml" value="0.2505" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/drawable/itinerary_icon.xml" value="0.107" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/drawable/up_wave.xml" value="0.19" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/activity_blog_view.xml" value="0.10092592592592593" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/activity_register.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/activity_view_blog.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/blog_list.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/create_guide_search.xml" value="0.259375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/create_itinerary.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/guide_feed.xml" value="0.16614583333333333" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/itinerary.xml" value="0.259375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/rate.xml" value="0.23055555555555557" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/unsuccessfullogin.xml" value="0.259375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/unsucessfullblogadd.xml" value="0.259375" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

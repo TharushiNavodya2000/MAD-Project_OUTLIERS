@@ -35,6 +35,7 @@
             app:layout_constraintHorizontal_bias="0.625"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/backImage" />
+
     </ScrollView>
 
     <TextView
@@ -48,7 +49,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="@+id/backImage"
-        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintHorizontal_bias="0.169"
         app:layout_constraintStart_toStartOf="@+id/backImage"
         app:layout_constraintTop_toTopOf="@+id/backImage"
         app:layout_constraintVertical_bias="0.0" />
@@ -62,10 +63,23 @@
         app:cornerRadius="?android:attr/windowTitleSize"
         app:layout_constraintBottom_toBottomOf="@+id/backImage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintHorizontal_bias="0.04"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/backImage"
-        app:layout_constraintVertical_bias="0.905" />
+        app:layout_constraintVertical_bias="0.831" />
 
+    <Button
+        android:id="@+id/guide"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/blue"
+        android:text="Guide"
+        app:cornerRadius="?android:attr/windowTitleSize"
+        app:layout_constraintBottom_toBottomOf="@+id/backImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backImage"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
