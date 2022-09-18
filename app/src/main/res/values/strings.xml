@@ -86,8 +86,11 @@
     <string name="profileName">Tharushi Arawwala</string>
     <string name="kandyDescription">Kandy is a large city in central Sri Lanka. It\'s set on a\nplateau surrounded by mountains, which are home to tea\nplantations and biodiverse rainforest. The city\'s heart is\nscenic Kandy Lake (Bogambara Lake), which is popular\nfor strolling. Kandy is famed for sacred Buddhist sites,\nincluding the Temple of the Tooth (Sri Dalada Maligawa)\nshrine, celebrated with the grand Esala Perahera annual\nprocession.</string>
     <string name="blankBox" />
-    <string name="selectDateHine">Select Date</string>
+    <string name="selectDateHint">Select Date</string>
     <string name="tellViewers">Tell Viewers how you know Kandy</string>
     <string name="briefNote">Write a brief note here (eg: How to get around)</string>
+    <string name="about">About</string>
+    <string name="aboutDescription">Historical records suggest that Kandy was first established\nby the Vikramabahu III (1357 - 1374 AD), who was the</string>
+
 
 </resources>

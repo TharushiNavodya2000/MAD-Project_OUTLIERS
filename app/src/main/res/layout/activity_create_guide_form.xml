@@ -110,7 +110,7 @@
         android:layout_marginTop="308dp"
         android:alpha="0.6"
         android:ems="10"
-        android:hint="@string/selectDateHine"
+        android:hint="@string/selectDateHint"
         android:inputType="date"
         android:translationZ="5dp"
         app:layout_constraintEnd_toEndOf="parent"
