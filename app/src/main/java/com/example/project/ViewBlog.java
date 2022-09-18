@@ -40,6 +40,7 @@ public class ViewBlog extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                Toast.makeText(ViewBlog.this,"Click Guild",Toast.LENGTH_LONG).show();
             }
         });
     }
