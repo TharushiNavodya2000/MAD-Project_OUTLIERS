@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Project</string>
-    <string name="successfull">Successfull</string>
+    <string name="successfull">Successful</string>
     <string name="add_blogheading">Add Blog</string>
     <string name="add_image">Add image</string>
     <string name="uploadbtn">Upload</string>
@@ -8,7 +8,7 @@
     <string name="description_title">Description</string>
     <string name="biomertirc_log">Biometric Login For App</string>
     <string name="resert_password">Reset Password</string>
-    <string name="reset_instruction">Please enter the registerd email to send the instruction to create new password</string>
+    <string name="reset_instruction">Please enter the registered email to send the instruction to create new password</string>
     <string name="spam">Did not received the email?check your spam message</string>
     <string name="reset_enter_emali">Enter your registered email</string>
     <string name="sendbtn">Send</string>

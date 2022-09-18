@@ -35,11 +35,14 @@ public class ViewBlog extends AppCompatActivity {
         BlogAdapter myAdapter = new BlogAdapter(this,places,desriptions,images);
         recyclerView.setAdapter(myAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        
         buttonguide = findViewById(R.id.guide);
         buttonguide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(ViewBlog.this, Guides.class);
+                Toast.makeText(ViewBlog.this,"Click Guild",Toast.LENGTH_LONG).show();
+                startActivity(intent);
             }
         });
     }
