@@ -35,6 +35,7 @@ public class ViewBlog extends AppCompatActivity {
         BlogAdapter myAdapter = new BlogAdapter(this,places,desriptions,images);
         recyclerView.setAdapter(myAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        
         buttonguide = findViewById(R.id.guide);
         buttonguide.setOnClickListener(new View.OnClickListener() {
             @Override
