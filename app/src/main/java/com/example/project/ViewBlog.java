@@ -40,7 +40,8 @@ public class ViewBlog extends AppCompatActivity {
         buttonguide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(ViewBlog.this, CreateGuide.class);
+                startActivity(intent);
             }
         });
     }
