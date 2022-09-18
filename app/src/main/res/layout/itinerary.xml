@@ -22,6 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="156dp"
         android:text="Kandy trip plan"
+        android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/button5"
@@ -140,6 +141,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:text="Wed 8/24"
+        android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
@@ -151,6 +153,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="64dp"
         android:text="Wed 8/26"
+        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/AddPlace2" />
@@ -162,8 +165,57 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="64dp"
         android:text="Wed 8/25"
+        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/AddPlace1" />
+
+    <ImageView
+        android:id="@+id/menuBarItinerary"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginBottom="20dp"
+        app:tint="#003399"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/menuBarGuide"
+        app:srcCompat="@drawable/itinerary_icon" />
+
+    <ImageView
+        android:id="@+id/menuBarProfile"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="20dp"
+        app:tint="#003399"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toEndOf="@+id/menuBarItinerary"
+        app:srcCompat="@drawable/user_icon" />
+
+    <ImageView
+        android:id="@+id/menuBarGuide"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="20dp"
+        android:background="#00888484"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/menuBarHome"
+        app:srcCompat="@drawable/compass"
+        app:tint="#003399" />
+
+    <ImageView
+        android:id="@+id/menuBarHome"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="20dp"
+        app:tint="#003399"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_home_24" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
