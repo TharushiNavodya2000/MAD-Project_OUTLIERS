@@ -25,6 +25,7 @@ public class ViewBlog extends AppCompatActivity {
         places = getResources().getStringArray(R.array.place);
         desriptions = getResources().getStringArray(R.array.description);
         recyclerView = findViewById(R.id.recycleView);
+
         buttonItinerary = findViewById(R.id.itinerary);
         buttonItinerary.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +34,7 @@ public class ViewBlog extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         BlogAdapter myAdapter = new BlogAdapter(this,places,desriptions,images);
         recyclerView.setAdapter(myAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
