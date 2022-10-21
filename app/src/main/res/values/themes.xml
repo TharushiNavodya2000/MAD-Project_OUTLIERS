@@ -14,10 +14,12 @@
         <!-- Customize your theme here. -->
         <item name="android:windowAnimationStyle">@style/alert</item>
     </style>
+
     <style name="alert">
         <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
         <item name="android:windowExitAnimation">@android:anim/fade_out</item>
     </style>
+
     <style name="RatingBarEffect" parent="Theme.AppCompat">
         <item name="colorControlNormal">
             #F76E11
@@ -26,4 +28,13 @@
             #FF9F45
         </item>
     </style>
+
+    <style name="Theme.Project.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Project.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Project.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

@@ -16,7 +16,7 @@ public class ViewBlog extends AppCompatActivity {
     String desriptions[];
     int images[]= {R.drawable.galle,R.drawable.kandy,R.drawable.mahamewnawa,R.drawable.nelumkuluna,R.drawable.seema_malakaya,
                 R.drawable.sigiriya,R.drawable.vatadageya};
-    Button button;
+    Button buttonItinerary;
     Button buttonguide;
     RecyclerView recyclerView;
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +25,12 @@ public class ViewBlog extends AppCompatActivity {
         places = getResources().getStringArray(R.array.place);
         desriptions = getResources().getStringArray(R.array.description);
         recyclerView = findViewById(R.id.recycleView);
-        button = findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
+        buttonItinerary = findViewById(R.id.itinerary);
+        buttonItinerary.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(ViewBlog.this,"Click button",Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(ViewBlog.this, CreateNewItinerary.class);
+                startActivity(intent);
             }
         });
         BlogAdapter myAdapter = new BlogAdapter(this,places,desriptions,images);
