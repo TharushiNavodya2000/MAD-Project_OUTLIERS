@@ -30,7 +30,7 @@ public class ViewBlog extends AppCompatActivity {
         buttonItinerary.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ViewBlog.this, CreateNewItinerary.class);
+                Intent intent = new Intent(ViewBlog.this, Create_Itinerary.class);
                 startActivity(intent);
             }
         });
