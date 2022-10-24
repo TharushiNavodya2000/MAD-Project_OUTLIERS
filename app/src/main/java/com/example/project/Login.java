@@ -109,7 +109,7 @@ public class Login extends AppCompatActivity  {
                         startActivity(intent);
                     }
                 });
-                btnok.setOnClickListener(new View.OnClickListener() {
+                btnok.setOnClickListener(new  View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         dialog.dismiss();
