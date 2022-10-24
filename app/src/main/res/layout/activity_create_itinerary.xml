@@ -22,21 +22,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="351dp"
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/idSearchView"
+        android:layout_width="280dp"
         android:layout_height="44dp"
-        android:layout_marginTop="16dp"
-        android:inputType="text"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:elevation="5dp"
+        app:iconifiedByDefault="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/question" />
+        app:layout_constraintTop_toBottomOf="@+id/question2" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="17dp"
         android:layout_height="17dp"
-        android:layout_marginTop="372dp"
+        android:layout_marginTop="356dp"
         android:layout_marginEnd="3dp"
         android:elevation="20dp"
         app:layout_constraintEnd_toStartOf="@+id/StartDate"
@@ -47,17 +51,17 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
         android:text="@string/AddDates"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+        app:layout_constraintTop_toBottomOf="@+id/idSearchView" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="17dp"
         android:layout_height="17dp"
-        android:layout_marginTop="372dp"
+        android:layout_marginTop="356dp"
         android:layout_marginEnd="3dp"
         android:elevation="20dp"
         app:layout_constraintEnd_toStartOf="@+id/EndDate"
@@ -69,18 +73,20 @@
         android:layout_width="68dp"
         android:layout_height="28dp"
 
-        android:layout_marginBottom="336dp"
         android:background="#FFFFFF"
         android:isScrollContainer="false"
+        android:onClick="showStartDatePickerDialog"
         android:radius="3dip"
         android:text="@string/StartDate"
         android:textAlignment="inherit"
         android:textColor="#3E3D3D"
         android:textSize="8sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/PlanButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSearchView"
+        app:layout_constraintVertical_bias="0.082"
         tools:ignore="TouchTargetSizeCheck" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -88,16 +94,17 @@
         android:layout_width="68dp"
         android:layout_height="28dp"
 
-        android:layout_marginBottom="336dp"
+        android:layout_marginTop="28dp"
         android:background="#FFFFFF"
         android:isScrollContainer="false"
+        android:onClick="showEndDatePickerDialog"
         android:text="@string/EndDate"
         android:textColor="#3E3D3D"
         android:textSize="8sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.752"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toEndOf="@+id/StartDate"
+        app:layout_constraintTop_toBottomOf="@+id/idSearchView"
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
@@ -105,7 +112,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"
-        android:text="TextView"
+        android:text="@string/CreateItinerary"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/Description"
@@ -195,7 +202,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_baseline_home_24" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
