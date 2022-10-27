@@ -47,9 +47,6 @@
             android:name=".Create_Itinerary"
             android:exported="false" />
         <activity
-            android:name=".CreateGuideForm"
-            android:exported="false" />
-        <activity
             android:name=".GuideLocationKandy"
             android:exported="false" />
         <activity
@@ -90,6 +87,15 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.project.BottomNavigation"
+            android:exported="false"
+
+            >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
     </application>
 
