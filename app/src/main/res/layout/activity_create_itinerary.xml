@@ -15,7 +15,7 @@
         android:layout_marginBottom="136dp"
         android:background="#1922BD"
         android:isScrollContainer="false"
-        android:radius="100dp"
+        android:radius="200dp"
         android:text="@string/Startplanning"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,89 +23,133 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <!--    <androidx.appcompat.widget.AppCompatButton-->
+    <!--        android:id="@+id/StartDate"-->
+    <!--        android:layout_width="68dp"-->
+    <!--        android:layout_height="28dp"-->
+
+    <!--        android:background="#FFFFFF"-->
+    <!--        android:isScrollContainer="false"-->
+    <!--        android:onClick="showStartDatePickerDialog"-->
+    <!--        android:radius="3dip"-->
+    <!--        android:text="@string/StartDate"-->
+    <!--        android:textAlignment="inherit"-->
+    <!--        android:textColor="#3E3D3D"-->
+    <!--        android:textSize="8sp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/PlanButton"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.478"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/idSearchView"-->
+    <!--        app:layout_constraintVertical_bias="0.082"-->
+    <!--        tools:ignore="TouchTargetSizeCheck" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatButton-->
+    <!--        android:id="@+id/EndDate"-->
+    <!--        android:layout_width="68dp"-->
+    <!--        android:layout_height="28dp"-->
+
+    <!--        android:layout_marginTop="28dp"-->
+    <!--        android:background="#FFFFFF"-->
+    <!--        android:isScrollContainer="false"-->
+    <!--        android:onClick="showEndDatePickerDialog"-->
+    <!--        android:text="@string/EndDate"-->
+    <!--        android:textColor="#3E3D3D"-->
+    <!--        android:textSize="8sp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/PlanButton"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.531"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/StartDate"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/idSearchView"-->
+    <!--        app:layout_constraintVertical_bias="0.0"-->
+    <!--        tools:ignore="TouchTargetSizeCheck" />-->
+
     <androidx.appcompat.widget.SearchView
         android:id="@+id/idSearchView"
         android:layout_width="280dp"
         android:layout_height="44dp"
         android:layout_margin="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:background="@color/white"
         android:elevation="5dp"
         app:iconifiedByDefault="false"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question2" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="17dp"
-        android:layout_height="17dp"
-        android:layout_marginTop="356dp"
-        android:layout_marginEnd="3dp"
-        android:elevation="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/StartDate"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/calender" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="96dp"
         android:text="@string/AddDates"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idSearchView" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="17dp"
-        android:layout_height="17dp"
-        android:layout_marginTop="356dp"
-        android:layout_marginEnd="3dp"
-        android:elevation="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/EndDate"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/calender" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/StartDate"
-        android:layout_width="68dp"
-        android:layout_height="28dp"
-
-        android:background="#FFFFFF"
-        android:isScrollContainer="false"
-        android:onClick="showStartDatePickerDialog"
-        android:radius="3dip"
-        android:text="@string/StartDate"
-        android:textAlignment="inherit"
-        android:textColor="#3E3D3D"
-        android:textSize="8sp"
-        app:layout_constraintBottom_toTopOf="@+id/PlanButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
+    <EditText
+        android:id="@+id/startDate"
+        android:layout_width="113dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="64dp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idSearchView"
-        app:layout_constraintVertical_bias="0.082"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/EndDate"
-        android:layout_width="68dp"
-        android:layout_height="28dp"
-
-        android:layout_marginTop="28dp"
-        android:background="#FFFFFF"
-        android:isScrollContainer="false"
-        android:onClick="showEndDatePickerDialog"
-        android:text="@string/EndDate"
-        android:textColor="#3E3D3D"
-        android:textSize="8sp"
+    <Button
+        android:id="@+id/btn_Startdate"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/startDate"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="28dp"
+        android:layout_toEndOf="@+id/startDate"
+        android:layout_toRightOf="@+id/startDate"
+        android:backgroundTint="#03A9F4"
+        android:text="@string/StartDate"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
-        app:layout_constraintStart_toEndOf="@+id/StartDate"
-        app:layout_constraintTop_toBottomOf="@+id/idSearchView"
-        tools:ignore="TouchTargetSizeCheck" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/startDate"
+        app:layout_constraintTop_toBottomOf="@+id/idSearchView" />
+
+    <EditText
+        android:id="@+id/endDate"
+        android:layout_width="113dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/startDate"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_EndDate"
+        app:layout_constraintTop_toBottomOf="@+id/startDate"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btn_EndDate"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_Startdate"
+        android:layout_alignStart="@+id/btn_Startdate"
+        android:layout_alignLeft="@+id/btn_Startdate"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#03A9F4"
+        android:text="@string/EndDate"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/PlanButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Startdate"
+        app:layout_constraintVertical_bias="0.05" />
 
     <TextView
         android:id="@+id/Title"
@@ -128,31 +172,20 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="108dp"
         android:text="@string/Newtrip"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
-        android:text="@string/Where"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Description" />
 
     <TextView
         android:id="@+id/question2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="92dp"
         android:text="@string/Where"
-        android:textSize="16sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Description" />
 
