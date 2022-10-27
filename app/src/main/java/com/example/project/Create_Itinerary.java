@@ -1,6 +1,8 @@
 package com.example.project;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
+import androidx.fragment.app.DialogFragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,5 +24,24 @@ public class Create_Itinerary extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        SearchView Location = findViewById(R.id.idSearchView);
+        Location.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Create_Itinerary.this, MapsActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void showStartDatePickerDialog(View v) {
+        DialogFragment newStartFragment = new DatePickerFragment();
+        newStartFragment.show(getSupportFragmentManager(), "datePicker");
+    }
+
+    public void showEndDatePickerDialog(View v) {
+        DialogFragment newEndFragment = new DatePickerFragment();
+        newEndFragment.show(getSupportFragmentManager(), "datePicker");
     }
 }

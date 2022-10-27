@@ -40,7 +40,7 @@ public class UpdateProfile extends AppCompatActivity {
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(UpdateProfile.this,Blog.class);
+                Intent intent = new Intent(UpdateProfile.this,ViewBlog.class);
                 startActivity(intent);
             }
         });
