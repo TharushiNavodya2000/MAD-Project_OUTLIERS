@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="deploymentTargetDropDown">
-    <runningDeviceTargetsSelectedWithDialog>
+    <targetSelectedWithDropDown>
       <Target>
-        <type value="RUNNING_DEVICE_TARGET" />
+        <type value="BOOT_WITH_SNAPSHOT_TARGET" />
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="C:\Users\surit\.android\avd\Pixel_XL_API_33.avd" />
+            <value value="C:\Users\DELL\.android\avd\Pixel_4_XL_API_30.avd" />
           </Key>
         </deviceKey>
+        <snapshotKey value="C:\Users\DELL\.android\avd\Pixel_4_XL_API_30.avd\snapshots\snap_2022-10-18_22-10-18" />
       </Target>
-      <Target>
-        <type value="RUNNING_DEVICE_TARGET" />
-        <deviceKey>
-          <Key>
-            <type value="SERIAL_NUMBER" />
-            <value value="adb-a1ebff55-mdVzmZ._adb-tls-connect._tcp" />
-          </Key>
-        </deviceKey>
-      </Target>
-    </runningDeviceTargetsSelectedWithDialog>
+    </targetSelectedWithDropDown>
+    <timeTargetWasSelectedWithDropDown value="2022-10-21T12:03:27.201068500Z" />
   </component>
 </project>

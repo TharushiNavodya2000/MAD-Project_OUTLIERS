@@ -105,15 +105,15 @@ public class Login extends AppCompatActivity  {
                     @Override
                     public void onClick(View view) {
                         dialog.dismiss();
-                        Intent intent = new Intent(Login.this, Profile.class);
+                         Intent intent = new Intent(Login.this, ViewBlog.class);
                         startActivity(intent);
                     }
                 });
-                btnok.setOnClickListener(new View.OnClickListener() {
+                btnok.setOnClickListener(new  View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         dialog.dismiss();
-                        Intent intent = new Intent(Login.this,Profile.class);
+                         Intent intent = new Intent(Login.this,ViewBlog.class);
                         startActivity(intent);
 
                     }
@@ -122,7 +122,7 @@ public class Login extends AppCompatActivity  {
                     @Override
                     public void onClick(View view) {
                         dialog.dismiss();
-                        Intent intent = new Intent(Login.this,Profile.class);
+                         Intent intent = new Intent(Login.this,ViewBlog.class);
                         startActivity(intent);
                     }
                 });
