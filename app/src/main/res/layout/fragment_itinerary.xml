@@ -21,6 +21,17 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button4"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Wed 8/27"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button2"
         android:layout_width="88dp"
         android:layout_height="wrap_content"
@@ -28,8 +39,7 @@
         app:layout_constraintBaseline_toBaselineOf="@+id/button4"
         app:layout_constraintEnd_toStartOf="@+id/button4"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button5"
-        tools:layout_editor_absoluteY="106dp" />
+        app:layout_constraintStart_toEndOf="@+id/button5" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
@@ -40,19 +50,7 @@
         app:layout_constraintEnd_toStartOf="@+id/button5"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="TouchTargetSizeCheck"
-        tools:layout_editor_absoluteY="108dp" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button4"
-        android:layout_width="88dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
-        android:text="Wed 8/27"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:ignore="TouchTargetSizeCheck" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button5"
@@ -62,8 +60,7 @@
         app:layout_constraintBaseline_toBaselineOf="@+id/button2"
         app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        tools:layout_editor_absoluteY="106dp" />
+        app:layout_constraintStart_toEndOf="@+id/button" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/AddPlace1"

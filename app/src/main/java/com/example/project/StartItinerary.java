@@ -1,20 +1,19 @@
 package com.example.project;
 
-import android.os.Bundle;
-import android.widget.TableLayout;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-import androidx.viewpager2.widget.ViewPager2;
+
+import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
 
-public class CreateItinerary extends AppCompatActivity {
+public class StartItinerary extends AppCompatActivity {
 
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.itinerary);
+        setContentView(R.layout.activity_start_itinerary);
 
         TabLayout tabLayout = findViewById(R.id.tabLayout);
         ViewPager viewPager = findViewById(R.id.viewPager);
@@ -28,7 +27,4 @@ public class CreateItinerary extends AppCompatActivity {
 
         viewPager.setAdapter(vpAdapter);
     }
-
-
-
 }
