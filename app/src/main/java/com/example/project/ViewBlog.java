@@ -44,7 +44,7 @@ public class ViewBlog extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ViewBlog.this, BottomNavigation.class);
-                Toast.makeText(ViewBlog.this,"Successful Guide",Toast.LENGTH_LONG).show();
+                //Toast.makeText(ViewBlog.this,"Successful Guide",Toast.LENGTH_LONG).show();
                 startActivity(intent);
             }
         });

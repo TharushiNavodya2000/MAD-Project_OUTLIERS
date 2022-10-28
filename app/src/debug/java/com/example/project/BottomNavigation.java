@@ -1,13 +1,9 @@
 package com.example.project;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-
-import com.google.android.material.badge.BadgeDrawable;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -25,7 +21,11 @@ public class BottomNavigation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bottom_navigation);
 
+        // Initialize and assign variable
         bottomNavigationView = findViewById(R.id.bottom_navigation);
+
+        // Set Home selected
+        bottomNavigationView.setSelectedItemId(R.id.home);
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
 
@@ -36,22 +36,18 @@ public class BottomNavigation extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.home:
                         startActivity(new Intent(getApplicationContext(),ViewBlog.class));
-                        //getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
                         return true;
 
                     case R.id.guide:
-                        startActivity(new Intent(getApplicationContext(),Create_Guide_Search.class));
-                        //getSupportFragmentManager().beginTransaction().replace(R.id.container,guideFragment).commit();
+                        startActivity(new Intent(getApplicationContext(),ViewGuidesFeed.class));
                         return true;
 
                     case R.id.itinerary:
                         startActivity(new Intent(getApplicationContext(),Create_Itinerary.class));
-                        //getSupportFragmentManager().beginTransaction().replace(R.id.container,itineraryFragment).commit();
                         return true;
 
                     case R.id.profile:
                         startActivity(new Intent(getApplicationContext(),Profile.class));
-                        //getSupportFragmentManager().beginTransaction().replace(R.id.container,profileFragment).commit();
                         return true;
                 }
 
