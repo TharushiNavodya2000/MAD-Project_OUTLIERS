@@ -6,6 +6,16 @@
     android:layout_height="match_parent">
 
 
+    <ImageView
+        android:id="@+id/DeleteBtn"
+        android:layout_width="28dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/deleteicon" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -112,7 +122,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tabLayout"
         app:layout_constraintVertical_bias="0.333"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck" >
+
+    </androidx.viewpager.widget.ViewPager>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
