@@ -145,7 +145,6 @@ public class Blog extends AppCompatActivity {
         placeTxt = findViewById(R.id.bplaceTxt);
         bloglaout = findViewById(R.id.bloglaout);
         discriptionTxt = findViewById(R.id.bdiscriptionTxt);
-        addimage = findViewById(R.id.badd);
         upload = findViewById(R.id.bbutton);
         images = findViewById(R.id.bimage);
 
@@ -177,7 +176,7 @@ public class Blog extends AppCompatActivity {
                 });
             }
         });
-        addimage.setOnClickListener(new View.OnClickListener() {
+        images.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 final CharSequence[] option = {"Take Photo","From Gallary","Cancel"};
