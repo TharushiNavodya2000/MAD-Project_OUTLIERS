@@ -104,6 +104,11 @@
     <string name="itinerary">Itinerary</string>
     <string name="profile">Profile</string>
     <string name="home">Home</string>
-
+    <string name="BackButton">back</string>
+    <string name="create_guide_title">Create Guide</string>
+    <string name="make_your_own_travel_guide_and">Make your own travel guide and</string>
+    <string name="let_others_know">let others know</string>
+    <string name="where_you_want_to_go">Where you want to go?</string>
+    <string name="create_guide_btn">CREATE GUIDE</string>
 
 </resources>

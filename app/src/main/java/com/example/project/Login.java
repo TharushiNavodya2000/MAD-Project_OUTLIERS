@@ -49,7 +49,7 @@ public class Login extends AppCompatActivity  {
         });
         mAuth = FirebaseAuth.getInstance();
 
-        RatingBar ratingBar = (RatingBar) findViewById(R.id.ratelevel);
+        //RatingBar ratingBar = (RatingBar) findViewById(R.id.ratelevel);
 
         login.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -76,7 +76,6 @@ public class Login extends AppCompatActivity  {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Login.this,fingerlog.class);
-                intent.putExtra("key","surith");
                 startActivity(intent);
             }
         });

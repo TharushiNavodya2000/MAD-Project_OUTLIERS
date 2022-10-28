@@ -50,9 +50,6 @@
             android:name=".GuideLocationKandy"
             android:exported="false" />
         <activity
-            android:name=".Guides"
-            android:exported="false" />
-        <activity
             android:name=".ViewBlog"
             android:exported="false" />
         <activity
@@ -90,6 +87,15 @@
         </activity>
         <activity
             android:name="com.example.project.BottomNavigation"
+            android:exported="false"
+
+            >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.project.Create_Guide_Search"
             android:exported="false"
 
             >

@@ -3,6 +3,7 @@ package com.example.project;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -28,29 +29,29 @@ public class BottomNavigation extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
 
-        //BadgeDrawable badgeDrawable = bottomNavigationView.getOrCreateBadge(R.id.profile);
-        //badgeDrawable.setVisible(true);
-        //badgeDrawable.setNumber(5);
-
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {
 
                 switch (item.getItemId()) {
                     case R.id.home:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
+                        startActivity(new Intent(getApplicationContext(),ViewBlog.class));
+                        //getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
                         return true;
 
                     case R.id.guide:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container,guideFragment).commit();
+                        startActivity(new Intent(getApplicationContext(),Create_Guide_Search.class));
+                        //getSupportFragmentManager().beginTransaction().replace(R.id.container,guideFragment).commit();
                         return true;
 
                     case R.id.itinerary:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container,itineraryFragment).commit();
+                        startActivity(new Intent(getApplicationContext(),Create_Itinerary.class));
+                        //getSupportFragmentManager().beginTransaction().replace(R.id.container,itineraryFragment).commit();
                         return true;
 
                     case R.id.profile:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container,profileFragment).commit();
+                        startActivity(new Intent(getApplicationContext(),Profile.class));
+                        //getSupportFragmentManager().beginTransaction().replace(R.id.container,profileFragment).commit();
                         return true;
                 }
 
