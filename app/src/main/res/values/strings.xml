@@ -104,6 +104,16 @@
     <string name="itinerary">Itinerary</string>
     <string name="profile">Profile</string>
     <string name="home">Home</string>
+    <string name="AddPlaces">Add Places</string>
+    <string name="Place1">Place 1</string>
+    <string name="Place2">Place 2</string>
+    <string name="Addplacestrip">Add places for your trip</string>
+    <string name="place3">Place 3</string>
+    <string name="Addnotestrip">Add notes</string>
+    <string name="Note1">Note 1</string>
+    <string name="Note2">Note 2</string>
+    <string name="Tripplan">Trip Plan</string>
+
     <string name="BackButton">back</string>
     <string name="create_guide_title">Create Guide</string>
     <string name="make_your_own_travel_guide_and">Make your own travel guide and</string>

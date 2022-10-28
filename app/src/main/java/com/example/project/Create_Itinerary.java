@@ -105,7 +105,7 @@ public class Create_Itinerary extends AppCompatActivity {
         startPlanning.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                dbRef = FirebaseDatabase.getInstance().getReference().child("Itinerary");
+                dbRef = FirebaseDatabase.getInstance().getReference().child("Itinerary");//creating the document in the firebase
 
                 try{
                     if(TextUtils.isEmpty(Location.getQuery().toString()))
@@ -122,8 +122,13 @@ public class Create_Itinerary extends AppCompatActivity {
                         dbRef.push().setValue(Itin);
                         Toast.makeText(getApplicationContext(),"Itinerary created successfully",Toast.LENGTH_SHORT).show();
 
+                        String ItineraryKey = dbRef.push().getKey();
+
+
                         Intent intent = new Intent(Create_Itinerary.this, StartItinerary.class);
+                        intent.putExtra("Key",Itin.getLocation());
                         startActivity(intent);
+
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
