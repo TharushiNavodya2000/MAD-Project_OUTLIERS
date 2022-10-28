@@ -4,9 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/drawable/camera.xml" value="0.219" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/drawable/round_btn.xml" value="0.263" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/drawable/uplord.xml" value="0.219" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/activity_blog.xml" value="0.264" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/project/app/src/main/res/layout/activity_view_blog.xml" value="0.31398104265402843" />
         <entry key="..\:/Users/surit/AndroidStudioProjects/MAD-Project_OUTLIERS/app/src/main/res/layout/activity_blog.xml" value="0.25" />
         <entry key="..\:/Users/surit/AndroidStudioProjects/MAD-Project_OUTLIERS/app/src/main/res/layout/activity_blog_view.xml" value="0.25" />
         <entry key="..\:/Users/surit/AndroidStudioProjects/MAD-Project_OUTLIERS/app/src/main/res/layout/activity_fingerlog.xml" value="0.25" />

@@ -18,6 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="400dp"
         android:layout_height="477dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -66,6 +67,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/backImage"
         app:layout_constraintVertical_bias="0.905" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="49dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="192dp"
+        android:background="@drawable/round_btn"
+        android:text="+"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/backImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
