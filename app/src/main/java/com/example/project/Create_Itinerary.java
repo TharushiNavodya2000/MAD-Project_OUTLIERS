@@ -105,8 +105,10 @@ public class Create_Itinerary extends AppCompatActivity {
         startPlanning.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                dbRef = FirebaseDatabase.getInstance().getReference().child("Itinerary");//creating the document in the firebase
 
+                //create functionality
+                dbRef = FirebaseDatabase.getInstance().getReference().child("Itinerary");//creating the document in the firebase
+                DatabaseReference pushRef = dbRef.push();
                 try{
                     if(TextUtils.isEmpty(Location.getQuery().toString()))
                         Toast.makeText(getApplicationContext(),"Please enter a location",Toast.LENGTH_SHORT).show();
@@ -119,14 +121,14 @@ public class Create_Itinerary extends AppCompatActivity {
                         Itin.setStartDate(startDate.getText().toString().trim());
                         Itin.setEndDate(endDate.getText().toString().trim());
 
-                        dbRef.push().setValue(Itin);
+                        pushRef.setValue(Itin);
                         Toast.makeText(getApplicationContext(),"Itinerary created successfully",Toast.LENGTH_SHORT).show();
 
-                        String ItineraryKey = dbRef.push().getKey();
-
+                        //Assigning the document key
+                        String ItineraryKey = pushRef.getKey();
 
                         Intent intent = new Intent(Create_Itinerary.this, StartItinerary.class);
-                        intent.putExtra("Key",Itin.getLocation());
+                        intent.putExtra("Key",ItineraryKey);
                         startActivity(intent);
 
                     }

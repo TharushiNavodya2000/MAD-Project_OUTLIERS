@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.google.android.material.tabs.TabLayout;
@@ -28,9 +29,8 @@ public class StartItinerary extends AppCompatActivity {
 
         String key = getIntent().getStringExtra("Key");
 
-
+        //read functionality
         DatabaseReference readRef = FirebaseDatabase.getInstance().getReference().child("Itinerary").child(key);
-        Location.setText(key);
         readRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
