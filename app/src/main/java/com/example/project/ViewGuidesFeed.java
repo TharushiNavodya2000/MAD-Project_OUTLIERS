@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class ViewGuidesFeed extends AppCompatActivity {
     String places[];
     String desriptions[];
@@ -18,6 +20,9 @@ public class ViewGuidesFeed extends AppCompatActivity {
             R.drawable.sigiriya,R.drawable.vatadageya};
 
     RecyclerView recyclerView;
+
+    FloatingActionButton GoToNextPage;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_guides_feed);
@@ -30,6 +35,14 @@ public class ViewGuidesFeed extends AppCompatActivity {
         recyclerView.setAdapter(myAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+        GoToNextPage = findViewById(R.id.guide);
+        GoToNextPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ViewGuidesFeed.this, Create_Guide_Search.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
