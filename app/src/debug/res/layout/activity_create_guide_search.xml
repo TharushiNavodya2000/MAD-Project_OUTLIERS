@@ -88,11 +88,13 @@
 
     <Button
         android:id="@+id/createGuideBtn"
+        android:onClick="CreateGuideBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="134dp"
         android:layout_marginEnd="135dp"
         android:layout_marginBottom="244dp"
+        android:backgroundTint="@color/blue"
         android:text="@string/create_guide_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

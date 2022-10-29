@@ -105,6 +105,16 @@
             android:name=".ViewGuidesFeed"
             android:exported="false"/>
 
+        <activity
+            android:name="com.example.project.GuidesForm"
+            android:exported="false"
+
+            >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
     </application>
 
 </manifest>
