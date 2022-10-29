@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="5dp"
-    tools:context=".ViewGuidesFeed">
+    tools:context=".GuidesFeeds">
 
 
     <ScrollView
@@ -68,7 +68,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="ShowPopup"/>
+        android:onClick="CreateGuide"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

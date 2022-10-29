@@ -39,7 +39,7 @@ public class BottomNavigation extends AppCompatActivity {
                         return true;
 
                     case R.id.guide:
-                        startActivity(new Intent(getApplicationContext(),ViewGuidesFeed.class));
+                        startActivity(new Intent(getApplicationContext(),GuidesFeeds.class));
                         return true;
 
                     case R.id.itinerary:

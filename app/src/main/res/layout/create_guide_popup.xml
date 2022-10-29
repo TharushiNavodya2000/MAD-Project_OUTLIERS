@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Create Guide"
+        android:text="Let's Create a Guide!"
         android:textSize="18dp"
         android:textStyle="bold"
         android:textColor="@color/white"
@@ -43,7 +43,5 @@
         android:text="OK"
         android:backgroundTint="@color/blue"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:onClick="GoToNextPage"/>
-
+        android:layout_marginTop="10dp"/>
 </LinearLayout>

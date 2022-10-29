@@ -10,13 +10,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class AdapterGuides extends RecyclerView.Adapter<AdapterGuides.MyViewHolder> {
+public class GuidesAdapter extends RecyclerView.Adapter<GuidesAdapter.MyViewHolder> {
     String place[];
     String description[];
     int images[];
     Context context;
 
-    public AdapterGuides(Context context,String place[],String description[],int images[])
+    public GuidesAdapter(Context context,String place[],String description[],int images[])
     {
         this.place = place;
         this.description = description;
@@ -26,7 +26,7 @@ public class AdapterGuides extends RecyclerView.Adapter<AdapterGuides.MyViewHold
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     {
         LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.guide_list,parent,false);
+        View view = inflater.inflate(R.layout.guides_list,parent,false);
         return new MyViewHolder(view);
     }
 
