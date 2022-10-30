@@ -19,7 +19,6 @@ public class GuidesFeeds extends AppCompatActivity {
     int images[]= {R.drawable.galle,R.drawable.kandy,R.drawable.vatadageya};
 
     RecyclerView recyclerView;
-    //Dialog myDialog;
 
     FloatingActionButton CreateGuide;
 
@@ -43,21 +42,5 @@ public class GuidesFeeds extends AppCompatActivity {
                startActivity(intent);
             }
         });
-
     }
-
-//    public void ShowPopup(View view) {
-//        TextView txtclose;
-//        Button btnOk;
-//        myDialog.setContentView(R.layout.create_guide_popup);
-//        txtclose = (TextView) myDialog.findViewById(R.id.txtclose);
-//        btnOk = (Button) myDialog.findViewById(R.id.btnok);
-//        txtclose.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                myDialog.dismiss();
-//            }
-//        });
-//        myDialog.show();
-//    }
 }

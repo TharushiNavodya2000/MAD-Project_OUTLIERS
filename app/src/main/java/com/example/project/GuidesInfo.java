@@ -2,7 +2,7 @@ package com.example.project;
 
 public class GuidesInfo {
 
-    private int guideImage;
+//    private int guideImage;
     private String guideTitle;
     private String guideDescription;
 
@@ -10,13 +10,13 @@ public class GuidesInfo {
 
     }
 
-    public int getGuideImage() {
-        return guideImage;
-    }
+//    public int getGuideImage() {
+//        return guideImage;
+//    }
 
-    public void setGuideImage(int guideImage) {
-        this.guideImage = guideImage;
-    }
+//    public void setGuideImage(int guideImage) {
+//        this.guideImage = guideImage;
+//    }
 
     public String getGuideTitle() {
         return guideTitle;

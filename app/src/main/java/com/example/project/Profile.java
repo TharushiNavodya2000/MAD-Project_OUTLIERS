@@ -50,6 +50,7 @@ public class Profile extends AppCompatActivity {
     String uemail ;
     String uphone ;
     String ubirthday;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,7 +66,9 @@ public class Profile extends AppCompatActivity {
         userID = auth.getCurrentUser().getUid();
         user = auth.getCurrentUser();
         update = findViewById(R.id.update);
+
         DocumentReference documentReference = store.collection("users").document(userID);
+
         documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {

@@ -135,10 +135,6 @@ public class Create_Itinerary extends AppCompatActivity {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-
-
-
-
             }
         });
     }

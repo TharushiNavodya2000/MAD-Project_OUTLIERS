@@ -120,6 +120,7 @@
     <string name="let_others_know">let others know</string>
     <string name="where_you_want_to_go">Where you want to go?</string>
     <string name="create_guide_btn">CREATE GUIDE</string>
+    <string name="view">View</string>
 
     <string-array name="users">
         <item>Tharushi Navodya</item>s
